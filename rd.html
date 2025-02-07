@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day, Vaishnavi</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            flex-direction: column;
+        }
+        .hidden-text {
+            display: none;
+            font-size: 2rem;
+            color: #d63384;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .roses {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .rose {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #b30e5c;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showMessage()">Click to Reveal</button>
+    <div class="hidden-text" id="message">Happy Rose Day, Vaishnavi! ❤️</div>
+    <div class="roses" id="roses" style="display: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
+        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
+        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("roses").style.display = "flex";
+        }
+    </script>
+</body>
+</html>
