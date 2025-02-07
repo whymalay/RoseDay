@@ -48,18 +48,19 @@
     </style>
 </head>
 <body>
-    <button onclick="showMessage()">Click to Reveal</button>
+    <button id="revealButton" onclick="showMessage()">Click to Reveal</button>
     <div class="hidden-text" id="message">Happy Rose Day, Vaishnavi! ❤️</div>
     <div class="roses" id="roses" style="display: none;">
-        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
-        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
-        <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="rose" alt="Rose">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
     </div>
     
     <script>
         function showMessage() {
             document.getElementById("message").style.display = "block";
             document.getElementById("roses").style.display = "flex";
+            document.getElementById("revealButton").style.display = "none";
         }
     </script>
 </body>
