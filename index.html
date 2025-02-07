@@ -13,23 +13,30 @@
             background-color: #ffe6e6;
             font-family: 'Arial', sans-serif;
             flex-direction: column;
+            text-align: center;
         }
         .hidden-text {
             display: none;
             font-size: 2rem;
             color: #d63384;
-            text-align: center;
             font-weight: bold;
             margin-top: 20px;
         }
+        .romantic-message {
+            display: none;
+            font-size: 1.5rem;
+            color: #b30e5c;
+            margin-top: 10px;
+            font-style: italic;
+        }
         .roses {
-            display: flex;
+            display: none;
             justify-content: center;
             margin-top: 10px;
         }
         .rose {
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
             margin: 0 10px;
         }
         button {
@@ -50,15 +57,17 @@
 <body>
     <button id="revealButton" onclick="showMessage()">Click to Reveal</button>
     <div class="hidden-text" id="message">Happy Rose Day, Vaishnavi! ❤️</div>
-    <div class="roses" id="roses" style="display: none;">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="rose" alt="Rose">
+    <div class="romantic-message" id="romanticMessage">You are the most beautiful rose in my garden of life, and I am forever grateful to have you by my side. 🌹💕</div>
+    <div class="roses" id="roses">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
     </div>
     
     <script>
         function showMessage() {
             document.getElementById("message").style.display = "block";
+            document.getElementById("romanticMessage").style.display = "block";
             document.getElementById("roses").style.display = "flex";
             document.getElementById("revealButton").style.display = "none";
         }
