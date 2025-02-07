@@ -33,11 +33,7 @@
             display: none;
             justify-content: center;
             margin-top: 10px;
-        }
-        .rose {
-            width: 70px;
-            height: 70px;
-            margin: 0 10px;
+            font-size: 2rem;
         }
         button {
             padding: 10px 20px;
@@ -58,17 +54,13 @@
     <button id="revealButton" onclick="showMessage()">Click to Reveal</button>
     <div class="hidden-text" id="message">Happy Rose Day, Vaishnavi! ❤️</div>
     <div class="romantic-message" id="romanticMessage">You are the most beautiful rose in my garden of life, and I am forever grateful to have you by my side. 🌹💕</div>
-    <div class="roses" id="roses">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Rose_Red.png" class="rose" alt="Rose">
-    </div>
+    <div class="roses" id="roses">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</div>
     
     <script>
         function showMessage() {
             document.getElementById("message").style.display = "block";
             document.getElementById("romanticMessage").style.display = "block";
-            document.getElementById("roses").style.display = "flex";
+            document.getElementById("roses").style.display = "block";
             document.getElementById("revealButton").style.display = "none";
         }
     </script>
